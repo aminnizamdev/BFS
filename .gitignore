@@ -1,0 +1,32 @@
+# Rust build artifacts
+/target/
+
+# Cargo lock file (optional, depends on project type)
+# Cargo.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Block display files (generated at runtime)
+block_*.txt
+block_display.txt
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,0 +1,31 @@
+[package]
+name = "i-protocol-blockchain"
+version = "0.1.0"
+edition = "2021"
+authors = ["Amin Nizam <ceo@iprotocol.com>", "Grey <grey@iprotocol.com>"]
+description = "I Protocol Blockchain MVP - High-performance cryptocurrency blockchain"
+
+[dependencies]
+# Cryptography
+blake3 = "1.5"
+ed25519-dalek = "2.0"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+hex = "0.4"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+[lib]
+name = "i_protocol"
+path = "src/lib.rs"
+
+[[bin]]
+name = "i-protocol-node"
+path = "src/main.rs" 
